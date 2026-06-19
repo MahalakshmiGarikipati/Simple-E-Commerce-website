@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>signup page</title>
+    <style>
+        body {
+
+            background-image: url('http://www.exceptnothing.com/wp-content/uploads/2011/12/colorPulse_V4.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: white;
+        }
+
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            background-color:rgba(0, 0, 0, 0.1) ;
+            box-shadow: 0 0 10px rgb(219, 203, 203);
+            width:350px;
+        }
+
+        .container h2 {
+            margin: 30px;
+            text-align: center;
+        }
+
+        .container form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .container input[type="text"],
+        .container input[type="password"],
+        .container input[type="email"] {
+            padding: 8px;
+            margin-bottom: 20px;
+            background: transparent;
+            border: none;
+            border-bottom:2px solid black;
+            color: white;
+        }
+
+        .container button {
+           
+            background:transparent;
+            color: white;
+            box-shadow: 0 0 4px white;
+            border: none;
+            border-radius: 30px;
+            width: 70px;
+            height: 30px;
+            margin: 20px 130px;
+            cursor: pointer;
+
+        }
+
+        .container button:hover {
+            background-color:rgb(255, 77, 0);
+            box-shadow: 0 0 4px rgb(255, 77, 0);
+        }
+        a{
+            padding:15px 10px;
+        }
+        span{
+            color:rgb(167, 238, 112) ;
+        }
+        .icons{
+            margin-left: 130px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>SignUp</h2>
+        <form action="registration.html" >
+            <label> Name</label>
+            <input type="text" id="name" name="name"  required>
+            <label>Email </label>
+            <input type="email" id="email" name="email"  required>
+            <label>Password</label>
+            <input type="password" id="password" name="password" required>
+            <label>Comfirm Password</label>
+            <input type="password" id="password" name="password" required>  
+            
+            <div align="center" style="display: flex;">
+                <p>already have an account?</p> 
+                <a href="login.html"><span>login</span></a>
+            </div>            
+        </form>
+        
+        <p align="center">or signup with </p>
+        <div class="icons">
+            <a href="YOUR_GOOGLE_AUTH_URL"><img width="30" height="30" src="https://img.icons8.com/color/48/google-logo.png" alt="google-logo"/></a>
+            <a href="YOUR_GITHUB_AUTH_URL"><img width="30" height="30" src="https://img.icons8.com/ios-filled/50/github.png" alt="github"/></a>
+        </div>
+        <button type="submit">Signup</button>
+    </div>
+</body>
+</html>
